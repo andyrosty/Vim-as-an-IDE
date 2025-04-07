@@ -1,3 +1,4 @@
+```markdown
 # 🧠 Modern Vim Setup for Python Development
 
 This repo includes a plug-and-play `.vimrc` configuration designed for Python development and productivity. It leverages **[vim-plug](https://github.com/junegunn/vim-plug)** to manage plugins and works on both **Vim** and **Neovim**.
@@ -25,50 +26,56 @@ sudo apt install vim
 
 # macOS (with Homebrew)
 brew install vim
-Neovim:
+```
 
-bash
-Copy
-Edit
+**Neovim:**
+
+```bash
 # Debian/Ubuntu
 sudo apt install neovim
 
 # macOS
 brew install neovim
-2. Install vim-plug
-For Vim:
+```
 
-bash
-Copy
-Edit
+---
+
+### 2. Install vim-plug
+
+**For Vim:**
+
+```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-For Neovim:
+```
 
-bash
-Copy
-Edit
+**For Neovim:**
+
+```bash
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-3. Create .vimrc or init.vim
-Vim users:
+```
 
-bash
-Copy
-Edit
+---
+
+### 3. Create `.vimrc` or `init.vim`
+
+**Vim users:**
+
+```bash
 nano ~/.vimrc
-Neovim users:
+```
 
-bash
-Copy
-Edit
+**Neovim users:**
+
+```bash
 mkdir -p ~/.config/nvim
 nano ~/.config/nvim/init.vim
+```
+
 Paste the following content inside:
 
-vim
-Copy
-Edit
+```vim
 call plug#begin('~/.vim/plugged')
 
 " --- 🐍 Python Development ---
@@ -138,55 +145,67 @@ autocmd CursorHoldI * silent call CocActionAsync('showSignatureHelp')
 inoremap <silent><expr> <C-j> pumvisible() ? coc#_select_confirm() : "\<C-j>"
 inoremap <silent><expr> <C-p> pumvisible() ? "\<C-p>" : "\<C-p>"
 inoremap <silent><expr> <C-Space> coc#refresh()
-4. Open Vim and Install Plugins
+```
+
+---
+
+### 4. Open Vim and Install Plugins
+
 Launch Vim and run:
 
-vim
-Copy
-Edit
+```vim
 :PlugInstall
+```
+
 This will install all the plugins listed.
 
-5. 🧪 Python Linting & Formatting (Optional but Recommended)
+---
+
+### 5. 🧪 Python Linting & Formatting (Optional but Recommended)
+
 Install required tools globally or in a virtual environment:
 
-bash
-Copy
-Edit
+```bash
 pip install flake8 mypy black virtualenv
-🧠 Usage Tips
-Feature	Command / Shortcut
-Toggle File Tree	<Ctrl> + n
-Open FZF Files	:Files
-Send code to REPL	Visual select + <leader>ss
-Git status	:G or :Gstatus
-Start screen	Launch Vim (Startify loads)
-Copilot trigger	Usually auto, fallback: <C-Space>
-Completion nav	<C-j> / <C-p>
-🧠 Optional Plugins
-This config assumes you're using CoC (coc.nvim) for IntelliSense. If you want Python-specific linting with ALE, install it:
+```
 
-vim
-Copy
-Edit
+---
+
+## 🧠 Usage Tips
+
+| Feature            | Command / Shortcut           |
+| ------------------ | ---------------------------- |
+| Toggle File Tree   | `<Ctrl> + n`                 |
+| Open FZF Files     | `:Files`                     |
+| Send code to REPL  | Visual select + `<leader>ss` |
+| Git status         | `:G` or `:Gstatus`           |
+| Start screen       | Launch Vim (Startify loads)  |
+| Copilot trigger    | Usually auto, or `<C-Space>` |
+| Completion nav     | `<C-j>` / `<C-p>`            |
+
+---
+
+## 🔌 Optional Plugin: ALE
+
+If you want to use **ALE** for linting instead of CoC:
+
+```vim
 Plug 'dense-analysis/ale'
-💬 Final Notes
-Works with both Vim and Neovim.
+```
 
-Customize to fit your workflow.
+---
 
-Make sure to install fzf binary if using fzf.vim.
+## 💬 Final Notes
 
-bash
-Copy
-Edit
-brew install fzf
-# Or for Linux
-sudo apt install fzf
+- Works with both Vim and Neovim
+- Make sure to install `fzf` binary if using `fzf.vim`:
+  
+```bash
+brew install fzf     # macOS
+sudo apt install fzf # Linux
+```
+
+---
+
 Happy Vimming! ⚡
-
-vbnet
-Copy
-Edit
-
-Let me know if you want the `.vimrc` split out into a separate file too.
+```
