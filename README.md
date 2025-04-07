@@ -28,7 +28,7 @@ sudo apt install vim
 brew install vim
 ```
 
-**Neovim:**
+**Neovim(Only if You want to be fancy):**
 
 ```bash
 # Debian/Ubuntu
