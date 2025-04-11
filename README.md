@@ -1,6 +1,8 @@
 ```markdown
 # 🧠 Modern Vim Setup for Python Development
 
+
+
 This repo includes a plug-and-play `.vimrc` configuration designed for Python development and productivity. It leverages **[vim-plug](https://github.com/junegunn/vim-plug)** to manage plugins and works on both **Vim** and **Neovim**.
 
 ## ✨ Features
@@ -15,6 +17,15 @@ This repo includes a plug-and-play `.vimrc` configuration designed for Python de
 ---
 
 ## 🛠️ Installation Guide
+
+## 🍺 Install Homebrew (macOS)
+
+First, make sure you have [Homebrew](https://brew.sh/) installed. It's the de facto package manager for macOS.
+
+Open Terminal and run:
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ### 1. Install Vim or Neovim
 
