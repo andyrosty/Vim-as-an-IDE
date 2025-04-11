@@ -3,7 +3,8 @@
 
 
 
-This repo includes a plug-and-play `.vimrc` configuration designed for Python development and productivity. It leverages **[vim-plug](https://github.com/junegunn/vim-plug)** to manage plugins and works on both **Vim** and **Neovim**.
+This repo includes a plug-and-play `.vimrc` configuration designed for Python development and productivity.
+
 
 ## ✨ Features
 
