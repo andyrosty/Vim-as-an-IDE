@@ -1,5 +1,5 @@
-```markdown
-# 🧠 Modern Vim Setup for Python Development
+
+Vim Setup for Python Development
 
 
 
@@ -15,7 +15,7 @@ This repo includes a plug-and-play `.vimrc` configuration designed for Python de
 - 🎨 Onedark theme + airline status bar
 - 🧠 Git integration + GitHub Copilot AI suggestions
 
----
+```markdown
 
 ## 🛠️ Installation Guide
 
@@ -85,7 +85,7 @@ mkdir -p ~/.config/nvim
 nano ~/.config/nvim/init.vim
 ```
 
-Paste the following content inside:
+Paste the following content inside your .vimrc :
 
 ```vim
 call plug#begin('~/.vim/plugged')
@@ -173,15 +173,8 @@ This will install all the plugins listed.
 
 ---
 
-### 5. 🧪 Python Linting & Formatting (Optional but Recommended)
 
-Install required tools globally or in a virtual environment:
 
-```bash
-pip install flake8 mypy black virtualenv
-```
-
----
 
 ## 🧠 Usage Tips
 
