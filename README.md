@@ -203,9 +203,11 @@ Plug 'dense-analysis/ale'
 ## 💬 Final Notes
 
 - Works with both Vim and Neovim
+- Make sure to also install node
 - Make sure to install `fzf` binary if using `fzf.vim`:
   
 ```bash
+brew install node
 brew install fzf     # macOS
 sudo apt install fzf # Linux
 ```
