@@ -6,7 +6,7 @@ Vim Setup for Python Development
 This repo includes a plug-and-play `.vimrc` configuration designed for Python development and productivity.
 
 
-## ✨ Features
+## ✨ Features:
 
 - 🐍 Enhanced Python syntax & REPL integration
 - 🚀 Productivity tools like commenting, repeating, surrounding
