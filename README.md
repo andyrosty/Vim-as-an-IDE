@@ -215,4 +215,3 @@ sudo apt install fzf # Linux
 ---
 
 Happy Vimming! ⚡
-```
